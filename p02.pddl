@@ -13,7 +13,7 @@
   (:init
 
     ; Hero location and carrying status
-    (hero-at loc-2-1)
+    (hero-at loc-2-2)
     (arm-free)
 
     ; Location <> Corridor Connections
@@ -24,30 +24,30 @@
     (connected loc-2-2 loc-2-3 c2223)
 
     ; Key locations
-    (key-at key1 loc-1-2)
-    (key-at key2 loc-3-2)
-    (key-at key3 loc-2-3)
-    (key-at key4 loc-4-2)
+    (key-at key1 loc-2-1)
+    (key-at key2 loc-1-2)
+    (key-at key3 loc-2-2)
+    (key-at key4 loc-2-3)
 
     ; Locked corridors
-    (lock-color c3242 red)
-    (lock-color c2223 yellow)
+    (lock-color c2122 purple)
+    (lock-color c1222 yellow)
+    (lock-color c2232 yellow)
+    (lock-color c2223 green)
 
     ; Risky corridors
-    (risky c2122)
-    (risky c2232)
 
     ; Key colours
-    (key-color key1 red)
-    (key-color key2 yellow)
-    (key-color key3 green)
-    (key-color key4 purple)
+    (key-color key1 green)
+    (key-color key2 treasure)
+    (key-color key3 purple)
+    (key-color key4 yellow)
 
     ; Key usage properties (one use, two use, etc)
     (uses-left key1 1)
-    (uses-left key2 2)
+    (uses-left key2 1)
     (uses-left key3 1)
-    (uses-left key4 1)
+    (uses-left key4 2)
 
   )
   (:goal
